@@ -1,0 +1,18 @@
+# Cartella dei modelli vocali (file grandi)
+models/
+
+# File di configurazione utente
+settings.json
+
+# File temporanei e log
+*.log
+*.tmp
+
+# File generati
+__pycache__/
+*.pyc
+*.pyo
+
+# File di sistema
+.DS_Store
+Thumbs.db

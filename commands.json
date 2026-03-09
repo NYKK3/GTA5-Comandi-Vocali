@@ -1,0 +1,214 @@
+{
+  "commands": [
+    {
+      "phrases": "sono in servizio, tornato servizio",
+      "keywords": "central, comando",
+      "action": "in_servizio",
+      "description": "Avvisa che sei in servizio"
+    },
+    {
+      "phrases": "fuori servizio, non servizio",
+      "keywords": "central, comando",
+      "action": "fuori_servizio",
+      "description": "Avvisa che sei fuori servizio"
+    },
+    {
+      "phrases": "accetto chiamata, prendo chiamata",
+      "keywords": "central, comando",
+      "action": "accetta_chiamata",
+      "description": "Avvisa che accetti la chiamata"
+    },
+    {
+      "phrases": "in pattuglia, di pattuglia",
+      "keywords": "central, comando",
+      "action": "in_pattuglia",
+      "description": "Avvisa che sei in pattuglia"
+    },
+    {
+      "phrases": "investigando, in indagine",
+      "keywords": "central, comando",
+      "action": "investigando",
+      "description": "Avvisa che sei in investigazione"
+    },
+    {
+      "phrases": "sulla scena, nella scena",
+      "keywords": "central, comando",
+      "action": "sulla_scena",
+      "description": "Avvisa che sei sulla scena del crimine"
+    },
+    {
+      "phrases": "torno central, ritorno central",
+      "keywords": "central, comando",
+      "action": "torno_in_centrale",
+      "description": "Avvisa che stai tornando in central"
+    },
+    {
+      "phrases": "sono pericolo, mi sparano, sotto fuoco",
+      "keywords": "central, comando",
+      "action": "in_pericolo",
+      "description": "Avvisa che sei in pericolo e hai bisogno di assistenza urgente"
+    },
+    {
+      "phrases": "agente terra, agente ferito, colpito agente, poliziotto a terra",
+      "keywords": "central, comando",
+      "action": "agente_a_terra",
+      "description": "Avvisa che un agente è a terra e ha bisogno di assistenza urgente"
+    },
+    {
+      "phrases": "fermato veicolo, fermato auto, fermo controllo, fermato sospetto",
+      "keywords": "central, comando",
+      "action": "fermato_un_veicolo",
+      "description": "Avvisa che hai fermato un veicolo"
+    },
+    {
+      "phrases": "serve supporto",
+      "keywords": "central, comando",
+      "action": "fermato_un_veicolo_backup",
+      "description": "Avvisa che hai fermato un veicolo e hai bisogno di supporto - Serve Mod UltimateBackup"
+    },
+    {
+      "phrases": "invia volante, serve volante, invia auto",
+      "keywords": "central, comando",
+      "action": "invia_backup",
+      "description": "Avvisa che ti serve un auto di supporto per un inseguimento - Serve Mod UltimateBackup"
+    },
+    {
+      "phrases": "codice due, codice 2",
+      "keywords": "central, comando",
+      "action": "codice2",
+      "description": "Codice 2"
+    },
+    {
+      "phrases": "codice tre, codice 3",
+      "keywords": "central, comando",
+      "action": "codice3",
+      "description": "Codice 3"
+    },
+    {
+      "phrases": "codice quattro, codice 4",
+      "keywords": "central, comando",
+      "action": "codice4",
+      "description": "Codice 4"
+    },
+    {
+      "phrases": "invia ambulanza, chiama ambulanza, serve ambulanza",
+      "keywords": "central, comando",
+      "action": "invia_ambulanza",
+      "description": "Invia un'ambulanza nella zona"
+    },
+    {
+      "phrases": "invia elicottero, chiama elicottero",
+      "keywords": "central, comando",
+      "action": "invia_elicottero",
+      "description": "Invia un elicottero"
+    },
+    {
+      "phrases": "invia medico legale, chiama medico legale, serve medico legale, coroner",
+      "keywords": "central, comando",
+      "action": "invia_medico_legale",
+      "description": "Invia il medico legale sulla scena"
+    },
+    {
+      "phrases": "vigili fuoco, pompieri",
+      "keywords": "central, comando",
+      "action": "invia_vigili_del_fuoco",
+      "description": "Invia i vigili del fuoco sulla scena"
+    },
+    {
+      "phrases": "inseguimento, insegui, inseguendo",
+      "keywords": "central, comando",
+      "action": "inseguimento",
+      "description": "Avvisa che hai iniziato un inseguimento"
+    },
+    {
+      "phrases": "sospetto scappato, sospetto perso, sospetto fuggito, perso sospetto",
+      "keywords": "central, comando",
+      "action": "sospetto_scappato",
+      "description": "Avvisa che il sospetto è riuscito a scappare"
+    },
+    {
+      "phrases": "sospetto catturato, sospetto arrestato, catturato sospetto, arrestato sospetto",
+      "keywords": "central, comando",
+      "action": "sospetto_catturato",
+      "description": "Avvisa che il sospetto è stato catturato"
+    },
+    {
+      "phrases": "blocco stradale, blocca strada",
+      "keywords": "central, comando",
+      "action": "blocco_stradale",
+      "description": "Avvisa che hai bisogno di un blocco stradale"
+    },
+    {
+      "phrases": "strisci chiodata, strisci chiodate",
+      "keywords": "central, comando",
+      "action": "striscia_chiodata",
+      "description": "Avvisa che hai bisogno delle striscie chiodate"
+    },
+    {
+      "phrases": "manovra pit, esegui pit, serve pit",
+      "keywords": "central, comando",
+      "action": "manovra_pit",
+      "description": "Avvisa che hai bisogno che un altro veicolo della polizia esegua una manovra pit"
+    },
+    {
+      "phrases": "carro attrezzi, carro attrezzi, carroattrezzi, attrezzi",
+      "keywords": "central, comando",
+      "action": "invia_carroattrezzi",
+      "description": "Avvisa che hai bisogno di un carro attrezzi per rimuovere un veicolo"
+    },
+    {
+      "phrases": "veicolo trasporto, auto trasporto",
+      "keywords": "central, comando",
+      "action": "invia_trasporto",
+      "description": "Avvisa che hai bisogno di un veicolo di trasporto per portare via uno o più sospetti arrestati"
+    },
+    {
+      "phrases": "pausa cibo, pausa pranzo, pausa mangiare",
+      "keywords": "central, comando",
+      "action": "pausa_cibo",
+      "description": "Avvisa che sei fermato per una pausa cibo"
+    },
+    {
+      "phrases": "serve meccanico, invia meccanico, serve riparazione",
+      "keywords": "central, comando",
+      "action": "invia_meccanico",
+      "description": "Avvisa che ti serve un meccanico - Serve Mod MechanicBackup"
+    },
+    {
+      "phrases": "serve assicurazione, invia assicurazione, assicuratore",
+      "keywords": "central, comando",
+      "action": "invia_assicurazione",
+      "description": "Avvisa che ti serve un addetto dell'assicurazione per gestire un incidente"
+    },
+    {
+      "phrases": "serve gruppo supporto, invia gruppo supporto, gruppo supporto",
+      "keywords": "central, comando",
+      "action": "invia_gruppo_supporto",
+      "description": "Avvisa che ti serve un gruppo di supporto per gestire una situazione complessa"
+    },
+    {
+      "phrases": "puoi andare, sei libero, siete liberi, andatevene, potete andare, andarvene",
+      "keywords": "colleghi, collega, ragazzi",
+      "action": "dismissAllBackupUnits",
+      "description": "Tutte le unità di supporto possono essere rilasciate dalla chiamata - Serve Mod UltimateBackup"
+    },
+    {
+      "phrases": "controllo documenti, controllo patente, controllo identita, controllare documenti, controllare patente, controllare identita",
+      "keywords": "central, comando",
+      "action": "controllo_documenti_persona",
+      "description": "Chiedi un controllo dei documenti alla central - Serve Mod StopThePed"
+    },
+    {
+      "phrases": "controllo targa, controllare targa, questa targa",
+      "keywords": "central, comando",
+      "action": "controllo_targa_veicolo",
+      "description": "Chiedi un controllo della targa di un veicolo alla central - Serve Mod StopThePed"
+    },
+    {
+      "phrases": "nuovo veicolo, altro veicolo, serve veicolo",
+      "keywords": "central",
+      "action": "nuovo_veicolo",
+      "description": "Richiesta di un nuovo veicolo"
+    }
+  ]
+}

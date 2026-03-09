@@ -1,0 +1,87 @@
+{
+  "commands": [
+    {
+      "phrases": "invia ambulanza, chiama ambulanza, ambulanza",
+      "keywords": "centrale, comando",
+      "action": "send_ambulance",
+      "description": "Invia un'ambulanza nella zona"
+    },
+    {
+      "phrases": "invia polizia, chiama polizia, polizia",
+      "keywords": "centrale, comando",
+      "action": "send_police",
+      "description": "Invia la polizia nella zona"
+    },
+    {
+      "phrases": "invia elicottero, chiama elicottero, elicottero",
+      "keywords": "centrale, comando",
+      "action": "send_helicopter",
+      "description": "Invia un elicottero"
+    },
+    {
+      "phrases": "fermati, stop, basta",
+      "keywords": "",
+      "action": "stop",
+      "description": "Ferma l'azione corrente"
+    },
+    {
+      "phrases": "vai, parti, via",
+      "keywords": "",
+      "action": "go",
+      "description": "Avvia l'azione"
+    }
+  ]
+}
+
+/*
+=================================================================
+ISTRUZIONI PER CONFIGURARE commands.json
+=================================================================
+
+1. PHRASES (obbligatorio):
+   - Una o più frasi separate da virgole che attivano il comando
+   - Esempio: "invia ambulanza, chiama ambulanza, ambulanza"
+   - Il sistema riconosce anche parole parziali (es. "inviare" per "invia")
+   - Le parole possono essere separate da altre parole nel testo riconosciuto
+
+2. KEYWORDS (opzionale):
+   - Parole chiave separate da virgole che devono essere presenti nel testo
+   - Se vuoto "", il comando funziona senza parole chiave
+   - Esempio: "centrale, comando" - almeno una di queste parole deve essere presente
+   - Utile per confermare i comandi importanti
+
+3. ACTION (obbligatorio):
+   - Nome della funzione da chiamare (senza il prefisso "_")
+   - La funzione deve essere definita in scripts/gta5commands.py
+   - Esempio: "send_ambulance" chiama la funzione "_send_ambulance()"
+
+4. DESCRIPTION (opzionale):
+   - Descrizione del comando per documentazione
+   - Non viene usata dal sistema, solo informativa
+
+=================================================================
+ESEMPIO DI NUOVO COMANDO:
+=================================================================
+
+{
+  "phrases": "accendi luci, accendi le luci",
+  "keywords": "",
+  "action": "turn_on_lights",
+  "description": "Accende le luci"
+}
+
+Poi aggiungi la funzione in scripts/gta5commands.py:
+
+def _turn_on_lights(self):
+    logger.info("✔ COMANDO ESEGUITO: Luci accese!")
+    # Qui aggiungi il codice per accendere le luci
+
+=================================================================
+NOTE IMPORTANTI:
+=================================================================
+
+- Il file deve essere JSON valido (nessun commento nel file commands.json!)
+- Usa questo file commands.json.example solo come riferimento
+- Copia la struttura ma senza i commenti quando modifichi commands.json
+- Assicurati che le virgole siano corrette tra gli oggetti della lista
+*/
