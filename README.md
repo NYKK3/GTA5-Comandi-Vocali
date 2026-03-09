@@ -1,6 +1,11 @@
-# Riconoscimento Vocale - Vosk
+# Riconoscimento Vocale Per GTA 5 LSPDFR
 
-Applicazione Windows per il riconoscimento vocale in tempo reale utilizzando la libreria Vosk.
+Questa applicazione per Windows permette l'utilizzo dei comandi vocali su GTA 5 LSPDFR tramite il riconoscimento vocale offerto dalla libreria Vosk.
+
+## Link Mod Da Usare Su GTA5
+Link Mod: Non Ancora Caricata
+Questa applicazione da sola non serve a nulla ti servirà anche questa mod da inserire nella cartella Grand Theft Auto V > plugins > LSPDFR.
+Questa applicazione comunica tramite protocollo http con la mod GTA5ComandiVocaliExtension tramite la porta 51250 che è di default ma cambiabile.
 
 ## Caratteristiche
 
@@ -8,7 +13,6 @@ Applicazione Windows per il riconoscimento vocale in tempo reale utilizzando la 
 - 🇮🇹 Supporto per la lingua italiana
 - 🖱️ Interfaccia grafica semplice e intuitiva
 - ⚡ Riconoscimento offline (nessuna connessione internet richiesta dopo l'installazione)
-- 📋 Copia e cancella del testo riconosciuto
 - 💾 Salvataggio automatico delle impostazioni (modello e microfono selezionati)
 - 🎯 Supporto per due modelli vocali (Small 48 MB e Medium 1.2 GB)
 
@@ -34,8 +38,8 @@ Oppure fai doppio click su `install_all.bat`.
 Lo script installerà automaticamente:
 - Tutte le dipendenze Python necessarie
 - Ti permetterà di scegliere tra due modelli vocali:
-  - **Small (48 MB)**: Più veloce, meno accurato
-  - **Medium (1.2 GB)**: Più lento, più accurato
+  - **Small (48 MB)**: Più veloce e leggero, ma meno accurato.
+  - **Medium (1.2 GB)**: Più lento e bisognoso di risorse, ma più accurato.
 
 ### Metodo 2: Installazione Manuale
 
@@ -159,4 +163,4 @@ I contributi sono benvenuti! Per apportare modifiche:
 ## Versione
 
 - Versione: 1.0.0
-- Data: 2024
+- Data: 09/09/2026

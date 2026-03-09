@@ -26,7 +26,7 @@ class VoiceRecognitionApp:
             root: Finestra principale Tkinter
         """
         self.root = root
-        self.root.title("Riconoscimento Vocale - Vosk")
+        self.root.title("GTA 5 Comandi Vocali - LSPDFR")
         self.root.geometry("600x550")
         self.root.resizable(True, True)
         
