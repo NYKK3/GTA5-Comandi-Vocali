@@ -214,7 +214,16 @@ class VoiceRecognitionApp:
         )
         self.port_entry.pack(side=tk.LEFT, padx=(0, 10))
         self.port_entry.insert(0, str(self.http_port))
-        self.port_entry.bind('<Return>', self.on_port_changed)
+        self.port_entry.bind('<Return>', lambda event: self.on_port_changed(event))
+        
+        # Pulsante Salva per la porta HTTP
+        save_port_button = ttk.Button(
+            port_frame,
+            text="Salva",
+            command=self.on_port_changed,
+            width=10
+        )
+        save_port_button.pack(side=tk.LEFT, padx=(5, 0))
         
         # Label per visualizzare il valore della porta
         self.port_value_label = ttk.Label(
@@ -481,10 +490,13 @@ class VoiceRecognitionApp:
                 if "http_port" in settings:
                     self.http_port = settings["http_port"]
                     print(f"Porta HTTP salvata: {self.http_port}")
-                    # Aggiorna l'entry con il valore caricato
+                    # Aggiorna l'entry con il valore caricato (assicurati che l'entry esiste)
                     if hasattr(self, 'port_entry'):
                         self.port_entry.delete(0, tk.END)
                         self.port_entry.insert(0, str(self.http_port))
+                        print(f"Porta entry aggiornata a: {self.http_port}")
+                    else:
+                        print("WARNING: port_entry non esiste ancora!")
                 else:
                     print("Nessuna http_port trovata nelle impostazioni, uso default: 51250")
                 
