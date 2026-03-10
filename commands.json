@@ -199,6 +199,12 @@
       "description": "Chiedi un controllo dei documenti alla central - Serve Mod StopThePed"
     },
     {
+      "phrases": "invia animali, controllo animali, serve animali",
+      "keywords": "central, comando",
+      "action": "invia_controllo_animali",
+      "description": "Invia una unità di controllo degli animali - Serve Mod StopThePed"
+    },
+    {
       "phrases": "controllo targa, controllare targa, questa targa",
       "keywords": "central, comando",
       "action": "controllo_targa_veicolo",

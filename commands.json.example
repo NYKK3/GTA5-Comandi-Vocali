@@ -1,34 +1,28 @@
 {
   "commands": [
     {
-      "phrases": "invia ambulanza, chiama ambulanza, ambulanza",
-      "keywords": "centrale, comando",
-      "action": "send_ambulance",
-      "description": "Invia un'ambulanza nella zona"
+      "phrases": "sono in servizio, tornato servizio",
+      "keywords": "central, comando",
+      "action": "in_servizio",
+      "description": "Avvisa che sei in servizio"
     },
     {
-      "phrases": "invia polizia, chiama polizia, polizia",
-      "keywords": "centrale, comando",
-      "action": "send_police",
-      "description": "Invia la polizia nella zona"
+      "phrases": "fuori servizio, non servizio",
+      "keywords": "central, comando",
+      "action": "fuori_servizio",
+      "description": "Avvisa che sei fuori servizio"
     },
     {
-      "phrases": "invia elicottero, chiama elicottero, elicottero",
-      "keywords": "centrale, comando",
-      "action": "send_helicopter",
-      "description": "Invia un elicottero"
+      "phrases": "accetto chiamata, prendo chiamata",
+      "keywords": "central, comando",
+      "action": "accetta_chiamata",
+      "description": "Avvisa che accetti la chiamata"
     },
     {
-      "phrases": "fermati, stop, basta",
-      "keywords": "",
-      "action": "stop",
-      "description": "Ferma l'azione corrente"
-    },
-    {
-      "phrases": "vai, parti, via",
-      "keywords": "",
-      "action": "go",
-      "description": "Avvia l'azione"
+      "phrases": "in pattuglia, di pattuglia",
+      "keywords": "central, comando",
+      "action": "in_pattuglia",
+      "description": "Avvisa che sei in pattuglia"
     }
   ]
 }
@@ -51,9 +45,7 @@ ISTRUZIONI PER CONFIGURARE commands.json
    - Utile per confermare i comandi importanti
 
 3. ACTION (obbligatorio):
-   - Nome della funzione da chiamare (senza il prefisso "_")
-   - La funzione deve essere definita in scripts/gta5commands.py
-   - Esempio: "send_ambulance" chiama la funzione "_send_ambulance()"
+   - Nome della funzione che si trova nel file dll della mod GTA5ComandiVocaliExtension
 
 4. DESCRIPTION (opzionale):
    - Descrizione del comando per documentazione

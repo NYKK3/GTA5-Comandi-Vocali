@@ -3,7 +3,7 @@
 Questa applicazione per Windows permette l'utilizzo dei comandi vocali su GTA 5 LSPDFR tramite il riconoscimento vocale offerto dalla libreria Vosk.
 
 ## Link Mod Da Usare Su GTA5
-- Link Mod: Non Ancora Caricata
+- Link Mod: [Clicca Qui](https://github.com/NYKK3/GTA5-Comandi-Vocali-Extension)
 - Questa applicazione da sola non serve a nulla ti servirà anche questa mod da inserire nella cartella Grand Theft Auto V > plugins > LSPDFR.
 - Questa applicazione comunica tramite protocollo http con la mod GTA5ComandiVocaliExtension tramite la porta 51250 che è di default ma cambiabile.
 
