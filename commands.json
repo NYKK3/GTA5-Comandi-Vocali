@@ -13,7 +13,7 @@
       "description": "Avvisa che sei fuori servizio"
     },
     {
-      "phrases": "accetto chiamata, prendo chiamata",
+      "phrases": "accetto chiamata, prendo chiamata, sto arrivando, rispondo, mostrami percorso",
       "keywords": "central, comando",
       "action": "accetta_chiamata",
       "description": "Avvisa che accetti la chiamata"
@@ -61,10 +61,10 @@
       "description": "Avvisa che hai fermato un veicolo"
     },
     {
-      "phrases": "serve supporto",
+      "phrases": "supporto fermato, supporto veicolo",
       "keywords": "central, comando",
       "action": "fermato_un_veicolo_backup",
-      "description": "Avvisa che hai fermato un veicolo e hai bisogno di supporto - Serve Mod UltimateBackup"
+      "description": "Avvisa che hai fermato un veicolo e hai bisogno di supporto - fermato_un_veicolo_backup2 serve Mod UltimateBackup"
     },
     {
       "phrases": "invia volante, serve volante, invia auto",
@@ -127,7 +127,7 @@
       "description": "Avvisa che il sospetto è riuscito a scappare"
     },
     {
-      "phrases": "sospetto catturato, sospetto arrestato, catturato sospetto, arrestato sospetto",
+      "phrases": "sospetto catturato, sospetto arrestato, catturato sospetto, arrestato sospetto, in custodia, stato fermo, stato arresto",
       "keywords": "central, comando",
       "action": "sospetto_catturato",
       "description": "Avvisa che il sospetto è stato catturato"
@@ -202,13 +202,115 @@
       "phrases": "invia animali, controllo animali, serve animali",
       "keywords": "central, comando",
       "action": "invia_controllo_animali",
-      "description": "Invia una unità di controllo degli animali - Serve Mod StopThePed"
+      "description": "Invia una unità di controllo degli animali"
     },
     {
       "phrases": "controllo targa, controllare targa, questa targa",
       "keywords": "central, comando",
       "action": "controllo_targa_veicolo",
       "description": "Chiedi un controllo della targa di un veicolo alla central - Serve Mod StopThePed"
+    },
+    {
+      "phrases": "si",
+      "keywords": "central, comando",
+      "action": "si",
+      "description": "Confermi con un si alla richiesta della centrale"
+    },
+    {
+      "phrases": "no",
+      "keywords": "central, comando",
+      "action": "no",
+      "description": "Rifiuti la richiesta della centrale"
+    },
+    {
+      "phrases": "contatto visivo, sospetto avvistato, vedo sospetto, in vista",
+      "keywords": "central, comando",
+      "action": "contatto_visivo",
+      "description": "Segnala un contatto visivo alla centrale"
+    },
+    {
+      "phrases": "ferma traffico, stop traffico, blocca traffico",
+      "keywords": "central, comando",
+      "action": "stop_traffico",
+      "description": "Chiedi alla centrale di fermare il traffico"
+    },
+    {
+      "phrases": "riprend traffico, continua traffico, lascia traffico",
+      "keywords": "central, comando",
+      "action": "riprendi_traffico",
+      "description": "Chiedi alla centrale di far riprendere il traffico"
+    },
+    {
+      "phrases": "rallenta traffico, diminu velocita, rallenta veicoli",
+      "keywords": "central, comando",
+      "action": "rallenta_traffico",
+      "description": "Chiedi alla centrale di rallentare il traffico"
+    },
+    {
+      "phrases": "controll traffico",
+      "keywords": "central, comando",
+      "action": "controllo_traffico",
+      "description": "Chiedi alla centrale di controllare il traffico"
+    },
+    {
+      "phrases": "numero multa",
+      "keywords": "central, comando",
+      "action": "multa",
+      "description": "Ticket e multe"
+    },
+    {
+      "phrases": "uso taser, utilizzo taser",
+      "keywords": "",
+      "action": "taser",
+      "description": "Taser"
+    },
+    {
+      "phrases": "ferito, ferita, a terra",
+      "keywords": "central, comando",
+      "action": "persona_ferita",
+      "description": "Avvisa la centrale che una persona è ferita"
+    },
+    {
+      "phrases": "decesso, deceduto, deceduta, morto, morta",
+      "keywords": "central, comando",
+      "action": "persona_deceduta",
+      "description": "Avvisa la centrale che una persona è deceduta"
+    },
+    {
+      "phrases": "lotta, scontro, corpo corpo",
+      "keywords": "central, comando",
+      "action": "lotta",
+      "description": "Avvisa la centrale che è in corso una lotta corpo a corpo"
+    },
+    {
+      "phrases": "ufficiale donna, agente donna, poliziotta",
+      "keywords": "central, comando",
+      "action": "ufficiale_donna",
+      "description": "Richiedi alla centrale un ufficiale donna"
+    },
+    {
+      "phrases": "controllo radio",
+      "keywords": "central, comando",
+      "action": "controllo_radio",
+      "description": "Effettua un controllo radio"
+    },
+    {
+      "phrases": "swat, unita speciale, unità speciale, squadra speciale, unità tattica",
+      "keywords": "central, comando",
+      "action": "swat",
+      "description": "Richiedi alla centrale l'intervento dello SWAT"
+    },
+    {
+      "phrases": "unita noose, unita nose, squadra noose, squadra nose",
+      "keywords": "central, comando",
+      "action": "noose",
+      "description": "Richiedi alla centrale l'intervento dello NOOSE"
+    },
+    {
+      "phrases": "cinofila, k9, k nove",
+      "keywords": "central, comando",
+      "action": "k9",
+      "description": "Richiedi alla centrale l'intervento del K9"
     },
     {
       "phrases": "nuovo veicolo, altro veicolo, serve veicolo",
