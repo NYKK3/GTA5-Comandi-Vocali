@@ -401,6 +401,13 @@ class VoiceRecognitionApp:
                 print(f"Porta HTTP modificata: {self.http_port}")
                 # Salva le impostazioni immediatamente
                 self.save_settings()
+                # Aggiorna l'entry per mostrare il nuovo valore
+                self.port_entry.delete(0, tk.END)
+                self.port_entry.insert(0, str(self.http_port))
+                print(f"Porta entry aggiornata a: {self.http_port}")
+                # Re-inizializza GTA5Commands con la nuova porta
+                self.commands = GTA5Commands(http_port=self.http_port)
+                print(f"GTA5Commands re-inizializzato con porta: {self.http_port}")
             else:
                 print("Porta non valida (deve essere tra 1 e 65535)")
         except ValueError:
@@ -492,9 +499,10 @@ class VoiceRecognitionApp:
                     print(f"Porta HTTP salvata: {self.http_port}")
                     # Aggiorna l'entry con il valore caricato (assicurati che l'entry esiste)
                     if hasattr(self, 'port_entry'):
+                        print(f"port_entry esiste, aggiornando a: {self.http_port}")
                         self.port_entry.delete(0, tk.END)
                         self.port_entry.insert(0, str(self.http_port))
-                        print(f"Porta entry aggiornata a: {self.http_port}")
+                        print(f"Porta entry aggiornata a: {self.port_entry.get()}")
                     else:
                         print("WARNING: port_entry non esiste ancora!")
                 else:
