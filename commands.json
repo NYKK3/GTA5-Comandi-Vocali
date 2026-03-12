@@ -13,15 +13,27 @@
       "description": "Avvisa che sei fuori servizio"
     },
     {
-      "phrases": "accetto chiamata, prendo chiamata, sto arrivando, rispondo, mostrami percorso",
+      "phrases": "occupat, impegnat",
+      "keywords": "central, comando",
+      "action": "occupato",
+      "description": "Avvisa che sei occupato"
+    },
+    {
+      "phrases": "accett chiamat, prend chiamat, sto arrivando, rispond, mostra percors",
       "keywords": "central, comando",
       "action": "accetta_chiamata",
       "description": "Avvisa che accetti la chiamata"
     },
     {
-      "phrases": "in pattuglia, di pattuglia",
+      "phrases": "dieci quarantuno, inizio pattuglia, inizio turno, turno pattuglia",
       "keywords": "central, comando",
       "action": "in_pattuglia",
+      "description": "Avvisa che sei in pattuglia"
+    },
+    {
+      "phrases": "in pattuglia, di pattuglia",
+      "keywords": "central, comando",
+      "action": "di_pattuglia",
       "description": "Avvisa che sei in pattuglia"
     },
     {
@@ -37,7 +49,7 @@
       "description": "Avvisa che sei sulla scena del crimine"
     },
     {
-      "phrases": "torno central, ritorno central",
+      "phrases": "torno central, torno stazione, faccio ritorn",
       "keywords": "central, comando",
       "action": "torno_in_centrale",
       "description": "Avvisa che stai tornando in central"
@@ -67,7 +79,7 @@
       "description": "Avvisa che hai fermato un veicolo e hai bisogno di supporto - fermato_un_veicolo_backup2 serve Mod UltimateBackup"
     },
     {
-      "phrases": "invia volante, serve volante, invia auto",
+      "phrases": "invia volante, serve volante, invia auto, serve support",
       "keywords": "central, comando",
       "action": "invia_backup",
       "description": "Avvisa che ti serve un auto di supporto per un inseguimento - Serve Mod UltimateBackup"
@@ -97,7 +109,7 @@
       "description": "Invia un'ambulanza nella zona"
     },
     {
-      "phrases": "invia elicottero, chiama elicottero",
+      "phrases": "aereo, elicottero",
       "keywords": "central, comando",
       "action": "invia_elicottero",
       "description": "Invia un elicottero"
@@ -115,9 +127,15 @@
       "description": "Invia i vigili del fuoco sulla scena"
     },
     {
-      "phrases": "inseguimento, insegui, inseguendo",
+      "phrases": "inizio insegui",
       "keywords": "central, comando",
-      "action": "inseguimento",
+      "action": "inizio_inseguimento",
+      "description": "Avvisa che hai iniziato un inseguimento"
+    },
+    {
+      "phrases": "in inseguimento, sto inseguendo",
+      "keywords": "central, comando",
+      "action": "in_inseguimento",
       "description": "Avvisa che hai iniziato un inseguimento"
     },
     {
@@ -157,7 +175,7 @@
       "description": "Avvisa che hai bisogno di un carro attrezzi per rimuovere un veicolo"
     },
     {
-      "phrases": "veicolo trasporto, auto trasporto",
+      "phrases": "trasport detenut, trasport sospett, veicolo detenut, veicolo sospett",
       "keywords": "central, comando",
       "action": "invia_trasporto",
       "description": "Avvisa che hai bisogno di un veicolo di trasporto per portare via uno o più sospetti arrestati"
@@ -211,13 +229,13 @@
       "description": "Chiedi un controllo della targa di un veicolo alla central - Serve Mod StopThePed"
     },
     {
-      "phrases": "si",
+      "phrases": "si, affermativo, confermo, esegui, procedi",
       "keywords": "central, comando",
       "action": "si",
       "description": "Confermi con un si alla richiesta della centrale"
     },
     {
-      "phrases": "no",
+      "phrases": "no, negativo, rifiuto, annulla",
       "keywords": "central, comando",
       "action": "no",
       "description": "Rifiuti la richiesta della centrale"
